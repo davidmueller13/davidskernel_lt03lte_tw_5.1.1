@@ -538,7 +538,6 @@ static int __jbd2_journal_force_commit(journal_t *journal)
 		read_unlock(&journal->j_state_lock);
 		return 0;
 	}
-
 	tid = transaction->t_tid;
 	read_unlock(&journal->j_state_lock);
 	if (need_to_start)
