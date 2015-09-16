@@ -4928,4 +4928,10 @@ config SEC_SMART_MGR_RUNQUEUE_AVG
 	bool "Samsung added for read current run queue"
 	help
 	  Support for Smart MGR function.
+
+config SPEED_LEVEL_INTERFACE
+        bool "Expose SPEED level information in sys fs"
+        help
+         Allow SPEED level to be shown into specific kernel apps
+
 endif
