@@ -354,3 +354,10 @@ config MDSS_UD_FLIP
 config PANEL_RECOVERY
 	bool "Support recovery when check rddpm err"
 	default n
+	
+config FB_MSM_MDSS_KCAL_CTRL
+ 	depends on FB_MSM_MDSS
+ 	bool "MDSS color control"
+ 	---help---
+ 	  Enable sysfs for rgb/lut control for mdss-mdp display controllers
+ 	  in the MDSS sub-system.
