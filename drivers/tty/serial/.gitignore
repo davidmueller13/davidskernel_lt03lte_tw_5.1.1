@@ -1,0 +1,9 @@
+/.built-in.o.cmd
+/.msm_serial_hs.o.cmd
+/.msm_serial_hs_lite.o.cmd
+/.serial_core.o.cmd
+/built-in.o
+/modules.order
+/msm_serial_hs.o
+/msm_serial_hs_lite.o
+/serial_core.o

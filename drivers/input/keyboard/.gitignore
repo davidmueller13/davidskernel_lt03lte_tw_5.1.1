@@ -1,0 +1,7 @@
+/.atkbd.o.cmd
+/.built-in.o.cmd
+/.gpio_keys.o.cmd
+/atkbd.o
+/built-in.o
+/gpio_keys.o
+/modules.order

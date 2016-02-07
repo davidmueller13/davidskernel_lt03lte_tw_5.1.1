@@ -1,0 +1,7 @@
+/.built-in.o.cmd
+/.spi.o.cmd
+/.spi_qsd.o.cmd
+/built-in.o
+/modules.order
+/spi.o
+/spi_qsd.o

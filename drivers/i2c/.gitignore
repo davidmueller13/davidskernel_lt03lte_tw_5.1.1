@@ -1,0 +1,9 @@
+/.built-in.o.cmd
+/.i2c-boardinfo.o.cmd
+/.i2c-core.o.cmd
+/.i2c-dev.o.cmd
+/built-in.o
+/i2c-boardinfo.o
+/i2c-core.o
+/i2c-dev.o
+/modules.order

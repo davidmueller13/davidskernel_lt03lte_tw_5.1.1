@@ -1,0 +1,11 @@
+/.af_unix.o.cmd
+/.built-in.o.cmd
+/.garbage.o.cmd
+/.sysctl_net_unix.o.cmd
+/.unix.o.cmd
+/af_unix.o
+/built-in.o
+/garbage.o
+/modules.order
+/sysctl_net_unix.o
+/unix.o

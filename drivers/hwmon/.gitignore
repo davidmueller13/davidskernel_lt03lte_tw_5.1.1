@@ -1,0 +1,13 @@
+/.built-in.o.cmd
+/.epm_adc.o.cmd
+/.hwmon.o.cmd
+/.qpnp-adc-common.o.cmd
+/.qpnp-adc-current.o.cmd
+/.qpnp-adc-voltage.o.cmd
+/built-in.o
+/epm_adc.o
+/hwmon.o
+/modules.order
+/qpnp-adc-common.o
+/qpnp-adc-current.o
+/qpnp-adc-voltage.o

@@ -1,0 +1,9 @@
+/.conf.cmd
+/.conf.o.cmd
+/.zconf.tab.o.cmd
+/conf
+/conf.o
+/zconf.hash.c
+/zconf.lex.c
+/zconf.tab.c
+/zconf.tab.o

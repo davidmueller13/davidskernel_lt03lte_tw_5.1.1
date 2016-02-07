@@ -1,0 +1,13 @@
+/.built-in.o.cmd
+/.mfd-core.o.cmd
+/.wcd9xxx-core-resource.o.cmd
+/.wcd9xxx-core.o.cmd
+/.wcd9xxx-irq.o.cmd
+/.wcd9xxx-slimslave.o.cmd
+/built-in.o
+/mfd-core.o
+/modules.order
+/wcd9xxx-core-resource.o
+/wcd9xxx-core.o
+/wcd9xxx-irq.o
+/wcd9xxx-slimslave.o

@@ -1,0 +1,9 @@
+/.built-in.o.cmd
+/.libps2.o.cmd
+/.serio.o.cmd
+/.serport.o.cmd
+/built-in.o
+/libps2.o
+/modules.order
+/serio.o
+/serport.o

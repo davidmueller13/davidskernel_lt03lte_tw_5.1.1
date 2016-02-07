@@ -1,0 +1,9 @@
+/.built-in.o.cmd
+/.core.o.cmd
+/.hidp.o.cmd
+/.sock.o.cmd
+/built-in.o
+/core.o
+/hidp.o
+/modules.order
+/sock.o

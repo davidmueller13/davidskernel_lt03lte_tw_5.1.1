@@ -1,0 +1,7 @@
+/aout.h
+/clk.h
+/kprobes.h
+/kretprobes.h
+/memblock.h
+/oprofile.h
+/smp.h

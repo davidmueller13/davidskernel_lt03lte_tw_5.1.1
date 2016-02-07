@@ -1,0 +1,9 @@
+/.built-in.o.cmd
+/.i2c-gpio.o.cmd
+/.i2c-msm.o.cmd
+/.i2c-qup.o.cmd
+/built-in.o
+/i2c-gpio.o
+/i2c-msm.o
+/i2c-qup.o
+/modules.order

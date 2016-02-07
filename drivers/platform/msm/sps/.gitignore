@@ -1,0 +1,17 @@
+/.bam.o.cmd
+/.built-in.o.cmd
+/.sps.o.cmd
+/.sps_bam.o.cmd
+/.sps_dma.o.cmd
+/.sps_map.o.cmd
+/.sps_mem.o.cmd
+/.sps_rm.o.cmd
+/bam.o
+/built-in.o
+/modules.order
+/sps.o
+/sps_bam.o
+/sps_dma.o
+/sps_map.o
+/sps_mem.o
+/sps_rm.o

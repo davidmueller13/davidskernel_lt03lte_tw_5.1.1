@@ -1,0 +1,15 @@
+/.built-in.o.cmd
+/.gpio_axis.o.cmd
+/.gpio_event.o.cmd
+/.gpio_input.o.cmd
+/.gpio_matrix.o.cmd
+/.gpio_output.o.cmd
+/.uinput.o.cmd
+/built-in.o
+/gpio_axis.o
+/gpio_event.o
+/gpio_input.o
+/gpio_matrix.o
+/gpio_output.o
+/modules.order
+/uinput.o

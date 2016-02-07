@@ -1,0 +1,11 @@
+/.built-in.o.cmd
+/.cpuidle.o.cmd
+/.driver.o.cmd
+/.governor.o.cmd
+/.sysfs.o.cmd
+/built-in.o
+/cpuidle.o
+/driver.o
+/governor.o
+/modules.order
+/sysfs.o

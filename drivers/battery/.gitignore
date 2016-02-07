@@ -1,0 +1,13 @@
+/.bq24260_charger.o.cmd
+/.built-in.o.cmd
+/.max17050_fuelgauge.o.cmd
+/.sec_battery.o.cmd
+/.sec_board-msm8974.o.cmd
+/.sec_fuelgauge.o.cmd
+/bq24260_charger.o
+/built-in.o
+/max17050_fuelgauge.o
+/modules.order
+/sec_battery.o
+/sec_board-msm8974.o
+/sec_fuelgauge.o

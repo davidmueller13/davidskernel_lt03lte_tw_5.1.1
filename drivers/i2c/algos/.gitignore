@@ -1,0 +1,5 @@
+/.built-in.o.cmd
+/.i2c-algo-bit.o.cmd
+/built-in.o
+/i2c-algo-bit.o
+/modules.order

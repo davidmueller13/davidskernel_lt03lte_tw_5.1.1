@@ -1,0 +1,11 @@
+/.built-in.o.cmd
+/.gpu_sysfs.o.cmd
+/.gpu_sysfs_main.o.cmd
+/.gpu_sysfs_target_kgsl.o.cmd
+/.gpu_sysfs_util.o.cmd
+/built-in.o
+/gpu_sysfs.o
+/gpu_sysfs_main.o
+/gpu_sysfs_target_kgsl.o
+/gpu_sysfs_util.o
+/modules.order

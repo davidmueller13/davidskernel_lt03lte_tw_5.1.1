@@ -1,0 +1,9 @@
+/.built-in.o.cmd
+/.file-mmu.o.cmd
+/.inode.o.cmd
+/.ramfs.o.cmd
+/built-in.o
+/file-mmu.o
+/inode.o
+/modules.order
+/ramfs.o
