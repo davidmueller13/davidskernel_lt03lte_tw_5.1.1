@@ -35,7 +35,7 @@ config JPN_DEMUX_MOD
 menuconfig DVB_CAPTURE_DRIVERS
 	bool "DVB/ATSC adapters"
 	depends on DVB_CORE
-	default y
+	default n
 	---help---
 	  Say Y to select Digital TV adapters
 
