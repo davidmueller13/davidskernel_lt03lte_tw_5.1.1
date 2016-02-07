@@ -61,3 +61,4 @@ extern struct clock_init_data msmkrypton_clock_init_data;
 int msm_clock_init(struct clock_init_data *data);
 int find_vdd_level(struct clk *clk, unsigned long rate);
 
+#endif
