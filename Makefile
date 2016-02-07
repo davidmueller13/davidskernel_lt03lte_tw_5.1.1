@@ -381,6 +381,8 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-delete-null-pointer-checks \
 		   -fno-inline-functions -fgcse-sm -fgcse-las -fgcse-after-reload \
 		   -pipe -DNDEBUG -fmodulo-sched -fmodulo-sched-allow-regmoves \
+		   -fgraphite -fgraphite-identity -floop-interchange -ftree-loop-distribution \
+		   -floop-strip-mine -floop-block -ftree-loop-linear -floop-nest-optimize \
 		   -mtune=cortex-a15 -mcpu=cortex-a15 -marm -mfpu=neon-vfpv4 \
 		   -mvectorize-with-neon-quad -fsingle-precision-constant -fforce-addr -fsched-spec-load \
 		   -fivopts -g0
