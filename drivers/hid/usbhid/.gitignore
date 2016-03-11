@@ -1,9 +1,0 @@
-/.built-in.o.cmd
-/.hid-core.o.cmd
-/.hid-quirks.o.cmd
-/.usbhid.o.cmd
-/built-in.o
-/hid-core.o
-/hid-quirks.o
-/modules.order
-/usbhid.o
