@@ -28,7 +28,7 @@ static const int cfq_back_max = 12582912;
 /* penalty of a backwards seek */
 static const int cfq_back_penalty = 1;
 static const int cfq_slice_sync = HZ / 8;
-static int cfq_slice_async = HZ / 7;
+static int cfq_slice_async = 7;
 static const int cfq_slice_async_rq = 2;
 static int cfq_slice_idle = 0;
 static int cfq_group_idle = 0;
