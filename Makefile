@@ -365,7 +365,6 @@ LDFLAGS_MODULE  =
 CFLAGS_KERNEL   = $(OPTIMIZATION_FLAGS)
 AFLAGS_KERNEL   = $(OPTIMIZATION_FLAGS)
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage
-GRAPHITE_FLAGS  = -fgraphite -floop-parallelize-all -ftree-loop-linear -floop-interchange -floop-strip-mine -floop-block -floop-flatten
 
 
 # Use LINUXINCLUDE when you must reference the include/ directory.
@@ -384,8 +383,6 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-delete-null-pointer-checks \
 		   -fno-inline-functions -fgcse-sm -fgcse-las -fgcse-after-reload \
 		   -pipe -DNDEBUG -fmodulo-sched -fmodulo-sched-allow-regmoves \
-		   -fgraphite -fgraphite-identity -floop-interchange -ftree-loop-distribution \
-		   -floop-strip-mine -floop-block -ftree-loop-linear -floop-nest-optimize \
 		   -mtune=cortex-a15 -mcpu=cortex-a15 -marm -mfpu=neon-vfpv4 \
 		   -mvectorize-with-neon-quad -fsingle-precision-constant -fforce-addr -fsched-spec-load \
 		   -fivopts -g0
