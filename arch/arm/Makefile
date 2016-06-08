@@ -31,6 +31,7 @@ KBUILD_DEFCONFIG := versatile_defconfig
 # defines filename extension depending memory management type.
 ifeq ($(CONFIG_MMU),)
 MMUEXT		:= -nommu
+KBUILD_CFLAGS	+= $(call cc-option,-mno-unaligned-access)
 endif
 
 ifeq ($(CONFIG_CC_STACKPROTECTOR),y)
@@ -65,7 +66,7 @@ KBUILD_CFLAGS	+= $(call cc-option,-fno-ipa-sra)
 # Note that GCC does not numerically define an architecture version
 # macro, but instead defines a whole series of macros which makes
 # testing for a specific architecture or later rather impossible.
-arch-$(CONFIG_CPU_32v7)		:=-D__LINUX_ARM_ARCH__=7 $(call cc-option,-march=armv7-a -mtune=cortex-a15 -Wa$(comma)-march=armv7-a)
+arch-$(CONFIG_CPU_32v7)		:=-D__LINUX_ARM_ARCH__=7 $(call cc-option,-mcpu=cortex-a15 -mfpu=neon -ftree-vectorize -Wa$(comma)-mcpu=cortex-a15)
 arch-$(CONFIG_CPU_32v6)		:=-D__LINUX_ARM_ARCH__=6 $(call cc-option,-march=armv6,-march=armv5t -Wa$(comma)-march=armv6)
 # Only override the compiler option if ARMv6. The ARMv6K extensions are
 # always available in ARMv7
@@ -90,26 +91,27 @@ arch-$(CONFIG_CPU_32v3)		:=-D__LINUX_ARM_ARCH__=3 -march=armv3
 arch-$(CONFIG_ARCH_MSM_KRAIT)	:=-D__LINUX_ARM_ARCH__=7 $(call cc-option,-mcpu=cortex-a15,-march=armv7-a)
 
 # This selects how we optimise for the processor.
-tune-$(CONFIG_CPU_ARM610)	:=-mtune=arm610
-tune-$(CONFIG_CPU_ARM710)	:=-mtune=arm710
-tune-$(CONFIG_CPU_ARM7TDMI)	:=-mtune=arm7tdmi
-tune-$(CONFIG_CPU_ARM720T)	:=-mtune=arm7tdmi
-tune-$(CONFIG_CPU_ARM740T)	:=-mtune=arm7tdmi
-tune-$(CONFIG_CPU_ARM9TDMI)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_ARM940T)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_ARM946E)	:=$(call cc-option,-mtune=arm9e,-mtune=arm9tdmi)
-tune-$(CONFIG_CPU_ARM920T)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_ARM922T)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_ARM925T)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_ARM926T)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_FA526)	:=-mtune=arm9tdmi
-tune-$(CONFIG_CPU_SA110)	:=-mtune=strongarm110
-tune-$(CONFIG_CPU_SA1100)	:=-mtune=strongarm1100
-tune-$(CONFIG_CPU_XSCALE)	:=$(call cc-option,-mtune=xscale,-mtune=strongarm110) -Wa,-mcpu=xscale
-tune-$(CONFIG_CPU_XSC3)		:=$(call cc-option,-mtune=xscale,-mtune=strongarm110) -Wa,-mcpu=xscale
-tune-$(CONFIG_CPU_FEROCEON)	:=$(call cc-option,-mtune=marvell-f,-mtune=xscale)
-tune-$(CONFIG_CPU_V6)		:=$(call cc-option,-mtune=arm1136j-s,-mtune=strongarm)
-tune-$(CONFIG_CPU_V6K)		:=$(call cc-option,-mtune=arm1136j-s,-mtune=strongarm)
+tune-$(CONFIG_CPU_ARM610)		:=-mtune=arm610
+tune-$(CONFIG_CPU_ARM710)		:=-mtune=arm710
+tune-$(CONFIG_CPU_ARM7TDMI)		:=-mtune=arm7tdmi
+tune-$(CONFIG_CPU_ARM720T)		:=-mtune=arm7tdmi
+tune-$(CONFIG_CPU_ARM740T)		:=-mtune=arm7tdmi
+tune-$(CONFIG_CPU_ARM9TDMI)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_ARM940T)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_ARM946E)		:=$(call cc-option,-mtune=arm9e,-mtune=arm9tdmi)
+tune-$(CONFIG_CPU_ARM920T)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_ARM922T)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_ARM925T)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_ARM926T)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_FA526)		:=-mtune=arm9tdmi
+tune-$(CONFIG_CPU_SA110)		:=-mtune=strongarm110
+tune-$(CONFIG_CPU_SA1100)		:=-mtune=strongarm1100
+tune-$(CONFIG_CPU_XSCALE)		:=$(call cc-option,-mtune=xscale,-mtune=strongarm110) -Wa,-mcpu=xscale
+tune-$(CONFIG_CPU_XSC3)			:=$(call cc-option,-mtune=xscale,-mtune=strongarm110) -Wa,-mcpu=xscale
+tune-$(CONFIG_CPU_FEROCEON)		:=$(call cc-option,-mtune=marvell-f,-mtune=xscale)
+tune-$(CONFIG_CPU_V6)			:=$(call cc-option,-mtune=arm1136j-s,-mtune=strongarm)
+tune-$(CONFIG_CPU_V6K)			:=$(call cc-option,-mtune=arm1136j-s,-mtune=strongarm)
+tune-$(CONFIG_ARCH_MSM_KRAIT)   :=-mtune=cortex-a15
 
 ifeq ($(CONFIG_AEABI),y)
 CFLAGS_ABI	:=-mabi=aapcs-linux -mno-thumb-interwork
